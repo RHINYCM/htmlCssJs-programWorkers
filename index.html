@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>workers实习信息网</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <style>
+            * {margin: 0;padding: 0;}
+            li{list-style: none;}
+            a{text-decoration: none;color: #000;}
+            .main {
+                width: 1200px;
+                margin: 0 auto;
+            }
+            .fl{float: left;}
+            .fr{float: right;}
+            .header {
+                height: 160px;
+                background-color:#6bb0bf;
+            }
+            .header .headerTop{
+                height: 40px;
+                background-color: #32373d;
+            }
+            .header .headerTop .TopCon{
+                height: 40px;
+                
+            }
+            .header .headerTop .TopCon .conLeft{
+                height: 40px;
+                
+                line-height: 40px;
+            }
+            .header .headerTop .TopCon .conLeft .leftTxt{
+                
+                height: 40px;
+                text-align: center;
+            }
+            .header .headerTop .TopCon .conLeft .leftTxt .logo{
+                font-size: 22px;
+                color: #ffffff;
+                text-align: center;
+                margin-right: 25px;
+            }
+            .header .headerTop .TopCon .conLeft .ulList{
+                
+                font-size: 14px;
+            }
+            .header .headerTop .TopCon .conLeft .ulList li{
+                float: left;
+                width: 70px;
+                text-align: center;
+            }
+            .header .headerTop .TopCon .conLeft .ulList li a{color: white;}
+            .header .headerTop .TopCon .conRight{
+                height: 40px;
+                
+            
+            }
+            .header .headerTop .TopCon .conRight .ulList{
+                line-height: 40px;
+                font-size: 12px;
+            }
+            .header .headerTop .TopCon .conRight .ulList li{
+                width: 70px;
+                height: 40px;
+                float: left;
+                text-align: center;
+                
+            }
+            .header .headerTop .TopCon .conRight .ulList li a{
+                height: 40px;
+                color: white;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+            }
+            
+            .header .headerTop .TopCon .conRight .ulList li .login{
+                padding-left: 28px;
+
+            }
+            .header .headerBottom{
+                height:120px;
+                
+            }
+            .header .headerBottom .BotCon{
+                height:120px;
+                
+            }
+            .header .headerBottom .BotCon .conLeft{
+                position: relative;
+                width: 566px;
+                height: 120px;
+                
+                background: url("img/head.png")no-repeat;
+                background-size: 100px 100px;
+                background-position-x: 10px;
+                background-position-y: 10px;
+                float: left;
+            }
+            .header .headerBottom .BotCon .conLeft .imgBox{
+                position: absolute;
+                left: 140px;
+                top: 32px;
+            }
+            .header .headerBottom .BotCon .conLeft .txtBox{
+                position: absolute;
+                left: 142px;
+                top: 70px;
+                font-size: 13px;
+                color: white;
+            }
+
+            .header .headerBottom .BotCon .conRight{
+                position: relative;
+                width: 454px;
+                height: 120px;
+                
+                float: right;
+            }
+            .header .headerBottom .BotCon .conRight .loginBox{
+                width: 100%;
+                height: 35px;
+                
+                position: absolute;
+                top:50%;
+                margin-top: -18px;
+                color: #757575;
+                font-size: 13px;
+            }
+            .header .headerBottom .BotCon .conRight .loginBox .txt1{
+                width: 163px;
+                height: 35px;
+                border: none;
+                margin-right: 25px;
+                text-indent: 10px;
+            }
+            .header .headerBottom .BotCon .conRight .loginBox .ptxt2{
+                width: 148px;
+                height: 35px;
+                
+                margin-right: 12px;
+                background: white;
+            }
+            .header .headerBottom .BotCon .conRight .loginBox .ptxt2 .txt2{
+                width: 94px;
+                height: 35px;
+                border: none;
+                
+                text-indent: 10px;
+            }
+            .header .headerBottom .BotCon .conRight .loginBox .ptxt2 .txt2-1{
+                padding: 6px 4px 9px;
+                
+                color: #6bb0bf;
+            }
+            .header .headerBottom .BotCon .conRight .loginBox .btnSub{
+                width: 106px;
+                height: 35px;
+                border: 1px solid white;
+                background: transparent;
+                color: white;
+            }
+            .png{
+                height: 13px;
+                position: relative;
+                b
+            }
+
+
+        
+        </style>
+    </head>
+
+    <body>
+        <div id="box" >
+            <div class="header">
+                <div class="headerTop">
+                    <div class="TopCon main clearfix">
+                        <div class="conLeft fl">
+                            <div class="leftTxt fl">
+                                <a href="#" class="logo">WORKERS</a>
+                                <a href="#" style="font-size: 12px;color: #6bb0bf;text-align: center;margin-right: 14px;">武汉大学</a>
+                                <a href="#" style="font-size: 12px;color: grey;margin-right: 36px;">[切换学校]</a>
+                            </div>
+                            <ul class="ulList clearfix fl">
+                                <li style="background-color: #272727;"><a href="#">首页</a></li>
+                                <li><a href="#">校园</a></li>
+                                <li><a href="#">实习</a></li>
+                                <li><a href="#">校招</a></li>
+                            </ul>
+                        </div>
+                        <div class="conRight fr">
+                            <ul class="ulList clearfix" >
+                               <li><a href="#" class="login" style="position: relative;"><img src="img/login.png" class="png" style="filter: invert(100%);position: absolute;top: 13px;left:20px" > 登录</a></li>
+                               <li><a href="#" >注册</a></li>
+                               <li><a href="#" ><img src="img/download.png" class="png" style="filter: invert(100%);" >下载APP</a></li>                   
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <div class="headerBottom">
+                    <div class="BotCon main">
+                        <div class="conLeft">
+                            <div class="imgBox"><img src="img/你想要的实习信息都在这.png" style="width: 350px;height:auto;" alt="你想要的实习信息都在这"></div>
+                            <div class="txtBox">找到一份心仪的实习</div>
+                        </div>
+                        <div class="conRight fr">
+                            <div class="loginBox">
+                                <input type="text" placeholder="输入手机号" class="fl txt1">
+                            <p class="fl ptxt2">
+                                <input type="text" placeholder="输入验证码" class="txt2">|
+                                <a href="#" class="txt2-1">获取</a>
+                            </p>
+                            <input type="submit" value="登录/注册" class="fl btnSub">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search"></div>
+            <div class="banner"></div><!--轮播图-->
+            <div class="content"></div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>

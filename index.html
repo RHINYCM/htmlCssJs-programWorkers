@@ -24,6 +24,7 @@
             .header .headerTop{
                 height: 40px;
                 background-color: #32373d;
+                
             }
             .header .headerTop .TopCon{
                 height: 40px;
@@ -168,15 +169,198 @@
             .png{
                 height: 13px;
                 position: relative;
-                b
+                
             }
 
+            /*搜索框*/
+            .search {
+                height: 132px;
+                background-color: #f2f5f4;
+            }
+
+            .searchCon{
+                height: 132px;
+                
+                overflow: hidden;
+            }
+
+            .searchCon .searchBox{
+                width: 937px;
+                height: 47px;
+                
+                margin-left: 133px;
+                margin-top: 30px;
+            }
+            .searchCon .searchBox .searchInp{
+                width: 794px;
+                height: 46px;
+                border: 1px solid #e8e8e8;
+                float: left;
+            }
+            .searchCon .searchBox .searchBtn{
+                width: 143px;
+                height: 47px;
+                background-color: #6bb0bf;
+                float: left;
+                line-height: 47px;
+                text-align: center;
+                color: white;
+                font-size: 18px;
+            }
+            .searchCon .searchList{
+                
+                margin-left: 133px;
+                font-size: 12px;
+                height: 38px;
+                line-height: 38px;
+            }
+            .searchCon .searchList li{float: left;}
+            
+            .searchCon .searchList li a{
+                color: #00c1cc;
+                padding: 0 11px;
+            }
+            .banCon{
+                height: 450px;
+                
+                padding-top: 46px;
+            }
+            .banCon .banLeft{
+                width: 300px;
+                height: 400px;
+                
+            }
+            .banCon .banLeft .banList ul{
+                font-size: 12px;
+            }
+            .banCon .banLeft .banList li{
+                margin-bottom: 24px;
+            }
+            .banCon .banLeft .banList li a{
+                color:#555555;
+                padding: 0 13px;
+            }
+            .banCon .banLeft .banList li a:first-child{font-size: 17px;padding: 0;color: black;}
+            .banCon .banLeft .banList li span{
+                margin-top: 2px;
+                font-family: "宋体";
+                color: #555555;
+            }
+            .banCon .banRight{
+                width: 840px;
+                height: 347px;
+                background-color: blueviolet;
+                position: relative;
+            }
+            .banCon .banRight .banImgBox{
+                width: 840px;
+                height: 347px;
+            }
+            .banCon .banRight .banImgBox .banImg{
+                width: 100%;
+                height: 100%;
+            }
+            .banCon .banRight:hover span{
+                display: block;
+            }
+            .banCon .banRight span{
+                position: absolute;
+                top:50%;
+                margin-top: -17px;
+                width: 22px;
+                height: 34px;
+                display: none;
+                font-size: 34px;
+                color: #757575;
+                font-family: "黑体";
+                font-weight:bold ;
+            }
+            .banCon .banRight .btnLeft{
+                left: 20px;
+            }
+            .banCon .banRight .btnRight{
+                right: 20px;
+            }
+            
+            /*内容区*/
+            .content .lineTop{
+                height: 118px;
+                
+            }
+            .content .lineTop .top1{
+                height: 53px;
+                line-height: 53px;
+                border-bottom: 1px solid #e8e8e8;
+                font-size: 16px;
+            }
+            .content .lineTop .top1 .company{
+                border-bottom:  2px solid #000;
+                padding-bottom: 17px;
+                margin-right: 60px;
+            }
+            .content .lineTop .top2{
+                height: 66px;
+                line-height: 19px;
+                padding-top: 24px;
+                
+                font-size: 12px;
+            }
+            .content .lineTop .top2 span{
+                width: 18px;
+                height: 18px;
+                background-color: #e6e6e6;
+                color: white;
+                text-align: center;
+                border-radius: 50%;
+                margin-right: 14px;
+            }
+
+            .content .line1 .conBox1{
+                
+            }
+            .content .line1 .conBox1 li .conBox{
+                height: 223px;
+                width: 367px;
+                border: 1px solid #eaeeed;
+                padding:0 17px;
+            }
+            .content .line1 .conBox1 li .conBox .com{
+                height: 50px;
+                padding-top: 30px;
+            }
+
+            .job{
+                color:#95918e;
+                border: 1px solid #eaeeed;
+                padding: 8px 25px;
+                border-radius: 5px;
+                margin-right: 12px;
+                font-size: 12px;
+            }
+            .xvxian{
+                padding-bottom: 20px;
+                border-bottom: 1px dotted #edeeed;
+            }
+            .content .line1 .conBox1 li .conBox .imgBox1{
+                
+                padding-top: 10px;
+            }
+            .content .line1 .conBox1 li .conBox .imgBox1 img{
+                width: 40px;
+                height: 40px;
+            }
+            .content .line1 .conBox1 li .conBox .imgBox1 .imgtxt{
+                font-size: 12px;
+                margin-left: 14px;
+                height: 40px;
+                line-height: 12px;
+            }
 
         
         </style>
     </head>
 
-    <body>
+    <body style="height: 10000px;">
         <div id="box" >
             <div class="header">
                 <div class="headerTop">
@@ -222,9 +406,259 @@
                     </div>
                 </div>
             </div>
-            <div class="search"></div>
-            <div class="banner"></div><!--轮播图-->
-            <div class="content"></div>
+            <div class="search">
+                <div class="searchCon main">
+                    <div class="searchBox">
+                        <input type="text" placeholder="  搜索公司/搜索职位" class="searchInp">
+                        <a href="#" class="searchBtn">搜索</a>
+                    </div>
+                    <ul class="searchList clearfix">
+                        <li><a href="#" style="color: #778ab9;padding: 0;">热门搜索:</a></li>
+                        <li><a href="#">24小时极速入职</a></li>
+                        <li><a href="#">名企校招早班车</a></li>
+                        <li><a href="#">面试经验</a></li>
+                        <li><a href="#">算法数据结构面试</a></li>
+                        <li><a href="#">C++、Java</a></li>
+                        <li><a href="#">前端架构师</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banCon main clearfix">
+                    <div class="banLeft fl">
+                        <ul class="banList">
+                            <li><a href="">技术</a><a href="">算法</a><a href="">后端</a><a href="">前端</a><span class="fr">></span></li>
+                            <li><a href="">产品</a><a href="">产品总监</a><a href="">产品经理</a><a href="">产品运营</a><span class="fr">></span></li>
+                            <li><a href="">设计</a><a href="">UI设计</a><a href="">交互设计</a><a href="">网页设计</a><span class="fr">></span></li>
+                            <li><a href="">运营</a><a href="">新媒体运营</a><a href="">编辑</a><a href="">数据运营</a><span class="fr">></span></li>
+                            <li><a href="">市场</a><a href="">市场营销</a><a href="">市场推广</a><a href="">市场策划</a><span class="fr">></span></li>
+                            <li><a href="">销售</a><a href="">销售专员</a><a href="">销售经理</a><a href="">销售总监</a><span class="fr">></span></li>
+                            <li><a href="">职能</a><a href="">HR</a><a href="">行政</a><a href="">财务</a><span class="fr">></span></li>
+                            <li><a href="">游戏</a><a href="">策划</a><a href="">开发</a><a href="">美工</a><span class="fr">></span></li>
+                        </ul>
+                    </div>
+                    <div class="banRight fr">
+                        <div class="banImgBox">
+                            <img src="img/ali.jpg" class="banImg" alt="alibaba">
+                        </div>
+                        <span class="btnLeft"><</span>
+                        <span class="btnRight">></span>
+                    </div>
+                </div>
+            </div><!--轮播图-->
+            <div class="content main">
+                <div class="line1">
+                    <div class="lineTop">
+                        <div class="top1">
+                            <a href="#" class="company">企业校招官网</a>
+                            <a href="" style="color: #999999;">最新职位</a>
+                        </div>
+                        <div class="top2">
+                            <span class="fl">?</span>
+                            <a href="#" class="fl" style="color: #999;margin-right: 55px;">热门企业2021春招实习信息汇总</a>
+                            <a href="#" class="fl" style="color: #00b38a;">我知道了</a>
+                        </div>
+                    </div>
+                    <ul class="conBox1">
+                        <li class="clearfix" style="margin-bottom: 17px;">
+                            <div class="conBox fl">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conBox fl" style="margin:0px 49px ;">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conBox fl">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix" style="margin-bottom: 17px;">
+                            <div class="conBox fl">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conBox fl" style="margin:0px 49px ;">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conBox fl">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix" style="margin-bottom: 17px;">
+                            <div class="conBox fl">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conBox fl" style="margin:0px 49px ;">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="conBox fl">
+                                <p class="com clearfix">
+                                    <a href="https://campus.alibaba.com/index.htm" style="font-size: 15px;" class="fl">阿里巴巴校园招聘</a>
+                                    <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
+                                </p>
+                                <p style="color: #7a7675;" >2022届/本科</p>
+                                <p class="xvxian clearfix">
+                                    <span class="job fl">算法</span>
+                                    <span class="job fl">后端</span>
+                                    <span class="job fl">前端</span>
+                                </p>
+                                <div class="imgBox1 clearfix">
+                                    <img src="img/alibaba.png" alt="alibaba" class="fl">
+                                    <div class="imgtxt fl">
+                                        <p>阿里巴巴网络技术有限公司</p>
+                                        <p style="color: gray;">电子商务/网上支付</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+
+
+
+
+                </div>
+                <div class="line2">
+                    <div class="lineTop">
+                        <div class="top1">
+                            <a href="#" class="company">笔试面经练习</a>
+                        </div>
+                        <div class="top2">
+                            <span class="fl">?</span>
+                            <a href="#" class="fl" style="color: #999;margin-right: 55px;">各行各业的面试经验这都有</a>
+                            <a href="#" class="fl" style="color: #00b38a;">我知道了</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="footer"></div>
         </div>
     </body>

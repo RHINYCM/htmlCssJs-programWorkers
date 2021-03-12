@@ -4,6 +4,7 @@
     <head>
         <title>workers实习信息网</title>
         <meta charset="utf-8">
+        
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
         <script src="jquery-3.4.1.min.js"></script>
         <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -19,6 +20,7 @@
             .fr{float: right;}
             .header {
                 height: 160px;
+                width: auto;
                 background-color:#6bb0bf;
             }
             .header .headerTop{
@@ -435,13 +437,18 @@
                 margin-right: 20px;
                 
             }
+            #box{
+                min-width: 1400px; 
+            }
+            
 
         
         </style>
     </head>
 
     <body>
-        <div id="box" >
+        <div class="pageoverlay"></div>
+        <div id="box">
             <div class="header">
                 <div class="headerTop">
                     <div class="TopCon main clearfix">
@@ -467,7 +474,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="headerBottom">
+                <div class="headerBottom main">
                     <div class="BotCon main">
                         <div class="conLeft">
                             <div class="imgBox"><img src="img/你想要的实习信息都在这.png" style="width: 350px;height:auto;" alt="你想要的实习信息都在这"></div>
@@ -527,19 +534,19 @@
                 </div>
             </div><!--轮播图-->
             <div class="content main" style="margin-bottom: 40px;">
-                <div class="line1">
-                    <div class="lineTop">
-                        <div class="top1">
+                <div class="line1 clearfix">
+                    <div class="lineTop clearfix">
+                        <div class="top1 clearfix">
                             <a href="#" class="company">企业校招官网</a>
                             <a href="" style="color: #999999;">最新职位</a>
                         </div>
-                        <div class="top2">
+                        <div class="top2 clearfix">
                             <span class="fl">?</span>
                             <a href="#" class="fl" style="color: #999;margin-right: 55px;">热门企业2021春招实习信息汇总</a>
                             <a href="#" class="fl" style="color: #00b38a;">我知道了</a>
                         </div>
                     </div>
-                    <ul class="conBox1">
+                    <ul class="conBox1 clearfix">
                         <li class="clearfix" style="margin-bottom: 17px;">
                             <div class="conBox fl">
                                 <p class="com clearfix">
@@ -600,7 +607,7 @@
                             </div>
                         </li>
                         <li class="clearfix" style="margin-bottom: 17px;">
-                            <div class="conBox fl">
+                            <div class="conBox fl clearfix">
                                 <p class="com clearfix">
                                     <a href="https://jobs.bytedance.com/campus/" style="font-size: 15px;" class="fl">字节跳动校园招聘</a>
                                     <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
@@ -638,7 +645,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="conBox fl">
+                            <div class="conBox fl clearfix">
                                 <p class="com clearfix">
                                     <a href="https://talent.didiglobal.com/" style="font-size: 15px;" class="fl">滴滴校园招聘</a>
                                     <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
@@ -678,7 +685,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="conBox fl" style="margin:0px 49px ;">
+                            <div class="conBox fl clearfix" style="margin:0px 49px ;">
                                 <p class="com clearfix">
                                     <a href="https://campus.163.com/app/index" style="font-size: 15px;" class="fl">网易校园招聘</a>
                                     <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
@@ -697,7 +704,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="conBox fl">
+                            <div class="conBox fl clearfix">
                                 <p class="com clearfix">
                                     <a href="https://careers.pinduoduo.com/campus/" style="font-size: 15px;" class="fl">拼多多校园招聘</a>
                                     <span class="fr" style="font-size: 13px;color: #e59089;">8k-12k</span> 
@@ -720,12 +727,12 @@
                     </ul>
                     <p class="more">查看更多</p>
                 </div>
-                <div class="line2">
-                    <div class="lineTop">
+                <div class="line2 clearfix">
+                    <div class="lineTop clearfix">
                         <div class="top1">
                             <a href="#" class="company">笔试面经练习</a>
                         </div>
-                        <div class="top2">
+                        <div class="top2 clearfix">
                             <span class="fl">?</span>
                             <a href="#" class="fl" style="color: #999;margin-right: 55px;">各行各业的面试经验这都有</a>
                             <a href="#" class="fl" style="color: #00b38a;">我知道了</a>
